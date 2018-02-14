@@ -29,7 +29,8 @@ public class Compteur
     
     public int getId(int idObjet)
     {
-        
+        //nouveau commentaire super utile
+        //j'aime la vie et elle me le rend bien!!!!
         return idObjet;
     }
     
