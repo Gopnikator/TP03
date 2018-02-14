@@ -14,7 +14,7 @@ public class Test
 {
     private static int i= 1;
     private static int j= 1;
-    private static  
+    private static int k = 2;
     
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
