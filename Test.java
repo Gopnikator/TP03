@@ -20,37 +20,12 @@ public class Test
         Scanner sc = new Scanner(System.in);
         
         /* Voyages enregistrés */
-        Compteur c[j] = new Compteur(i); 
+        Compteur c = new Compteur(i,j); 
         
         
-        System.out.println("Il y a "+Voyage.nbVoyages+" voyages enregistrés");
-        
-
-         /* Saisie ville départ par utilisateur*/
-
-        System.out.println("Veuillez saisir une ville de départ :");
-        vDep = sc.nextLine();
-
-    
-        /* Saisie ville arrivée par utilisateur*/
-
-        System.out.println("Veuillez saisir une ville d'arrivée :");
-        vArr = sc.nextLine();
-
-
-      
-        
-        
-        v41.compDist(v41,v45);
-        v43.compDist(v43,v46);
-        v41.compDist(v41,v43);
-        
-        System.out.println(".");
-        System.out.println(".");
-        
-        v41.compPrix(v41,v45);
-        v43.compPrix(v43,v46);
-        v41.compPrix(v41,v43);
+        System.out.println("Il y a ");
+        c.afficheNbObjets();
+        System.out.println(" objs enregistrés");
         
         
     }
