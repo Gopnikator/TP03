@@ -1,4 +1,3 @@
-//plip
 /**
  * Décrivez votre classe Test ici.
  *
@@ -6,30 +5,33 @@
  * @version 26/01/18
  */
 
-
 import java.util.Scanner;
-
 
 public class TestCompteur
 {
-    private static int i= 1;
-    //private static int j= 1;
-    private static int k = 2;
-    
     public static void main(String[] args){
+        int cpt,init;
         Scanner sc = new Scanner(System.in);
         
-        /* Voyages enregistrés */
-        Compteur c = new Compteur(i); 
+        do{
+            System.out.println("Veuillez saisir le nombre de compteur voulu :");
+            cpt = sc.nextInt();
+        }while(cpt<0);
+        Compteur [] tabC = new Compteur[cpt];
         
+        do{
+            System.out.println("Veuillez saisir une valeur initiale :");
+            init = sc.nextInt();
+        }while(init<0);
         
-        System.out.println("Il y a ");
-        c.afficheNbObjets();
-        System.out.println(" objs enregistrés");
+        for(int i=0; i<cpt;i++){
+            /* Enregistrement des compteurs */
+            tabC[i] = new Compteur(init);
+            System.out.print("Création du compteur "+i+" ,");
+            tabC[i].afficheId();
+        }
+        tabC[1].afficheNbObjet();
         
         
     }
-    
-    
-    
 }
