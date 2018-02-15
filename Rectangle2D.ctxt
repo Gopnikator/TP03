@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Rectangle2D
+comment0.text=\r\n\ D\u00E9crivez\ votre\ classe\ Rectangle2D\ ici.\r\n\r\n\ @author\ (votre\ nom)\r\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\r\n
+comment1.params=p1\ p2\ p3\ p4
+comment1.target=Rectangle2D(Point2D,\ Point2D,\ Point2D,\ Point2D)
+comment1.text=Constructeur\ Rectangle2D
+comment2.params=
+comment2.target=double\ perimetre()
+comment3.params=
+comment3.target=double\ aire()
+numComments=4

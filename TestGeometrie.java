@@ -17,19 +17,23 @@ public class TestGeometrie
         float x1 = sc.nextInt();
         System.out.println("Veuillez saisir y1 :");
         float y1 = sc.nextInt();
-        Point2D p1 = new Point2D(x1,y1);
+        Point2D a = new Point2D(x1,y1);
         
         System.out.println("Veuillez saisir x2 :");
         float x2 = sc.nextInt();
         System.out.println("Veuillez saisir y2 :");
         float y2 = sc.nextInt();
-        Point2D p2 = new Point2D(x2,y2);
+        Point2D b = new Point2D(x2,y2);
         
-        Segment2D s1 = new Segment2D(p1,p2);
+        System.out.println("Veuillez saisir x2 :");
+        float x3 = sc.nextInt();
+        System.out.println("Veuillez saisir y2 :");
+        float y3 = sc.nextInt();
+        Point2D c = new Point2D(x3,y3);
         
-        
-        
-        s1.afficheLg();
+        Triangle2D abc = new Triangle2D(a,b,c);
+        abc.afficheP();
+        abc.afficheA();
         
     }
 }
