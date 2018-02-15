@@ -13,7 +13,7 @@ public class Compteur
 {
     // instance variables - replace the example below with your own
     private static int idObjet;
-    static int nbObjets;
+    static int nbObjet;
 
     /**
      * Constructor for objects of class Compteur
@@ -22,8 +22,8 @@ public class Compteur
     public Compteur(int x, int y)
     {
         // initialise instance variables
-        nbObjets = idObjet;
-        idObjet++;
+        idObjet = nbObjet;
+        nbObjet++;
     }
 
     // fonctions d'affichage
@@ -32,11 +32,11 @@ public class Compteur
     }
     
     public void afficheNbObjets(){
-        System.out.println("Il existe "+nbObjets+ " objets");
+        System.out.println("Il existe "+nbObjet+ " objets");
     }
        
     // Getters
     public int getId(){return idObjet;}
-    static int getNbObjets(){return nbObjets;}
+    static int getIdMax(){return nbObjet;}
    
 }
