@@ -11,5 +11,5 @@ comment3.target=void\ afficheNbObjets()
 comment4.params=
 comment4.target=int\ getId()
 comment5.params=
-comment5.target=int\ getNbObjets()
+comment5.target=int\ getIdMax()
 numComments=6
