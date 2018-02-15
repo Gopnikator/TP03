@@ -9,13 +9,18 @@ public class Compteur
     // instance variables - replace the example below with your own
     private static int idObjet;
     static int nbObjet;
-
+    private static int init;
+    
     /**
      * Constructor for objects of class Compteur
      */
     
     public Compteur(int x)
     {
+        init = -1;
+        do{
+            
+        }while (init<0);
         // initialise instance variables
         idObjet = nbObjet;
         nbObjet++;
