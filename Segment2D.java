@@ -8,44 +8,42 @@
 public class Segment2D
 {
     // instance variables - replace the example below with your own
-    private Point2D p1;
-    private Point2D p2;
+    private Point2D x;
+    private Point2D y;
 
     /**
      * Constructor for objects of class Segment2D
      */
-    public Segment2D(Point2D p1, Point2D p2){
+    public Segment2D(Point2D x, Point2D y)
+    {
         // initialise instance variables
-        this.p1 = p1;
-        this.p2 = p2;
+        this.x = x;
+        this.y = y;
     }
     
-    public double longueur(){
-        double lg = Math.sqrt(Math.pow((p2.getX()-p1.getX()),2)+Math.pow((p2.getY()-p1.getY()),2));
-        return lg;
+    public float longueur()
+    {
+        
     }
 
-    public void deplaceP1(float dxP1, float dyP1){
-        p1.deplace(dxP1,dyP1);
+    public void deplace(Point2D dx, Point2D dy)
+    {
+        x = dx + x;
+        y = dy + y;
     }
     
-    public void deplaceP2(float dxP2, float dyP2){
-        p2.deplace(dxP2,dyP2);
+    public void affiche()
+    {
+        System.out.println("coord = " + x + " " + y);
     }
     
-    public void affiche(){
-        System.out.println("Segment entre ");
+    public float getX()
+    {
+        return x;
     }
     
-    public void afficheLg(){
-        System.out.println(longueur());
-    }
-    
-    public Point2D getP1(){
-        return p1;
-    }
-    
-    public Point2D getP2(){
-        return p2;
+    public float getY()
+    {
+        return y;
     }
 }

@@ -1,36 +1,38 @@
+//plop
 /**
  * Write a description of class Compteur here.
  *
  * @author Alexandre Arnaud - Corentin Besnard
  * @version 15/02/2018
  */
-
-import java.util.Scanner;
-
-public class Compteur{
+public class Compteur
+{
+    // instance variables - replace the example below with your own
     private static int idObjet;
-    static int nbObjet;
-    private static int init;
+    static int nbObjets;
+
+    /**
+     * Constructor for objects of class Compteur
+     */
     
-    Scanner sc = new Scanner(System.in);
-    
-    /** Constructeur Compteur */
-    public Compteur(int x){
-        idObjet = x + nbObjet;
-        nbObjet++;
+    public Compteur(int x, int y)
+    {
+        // initialise instance variables
+        nbObjets = idObjet;
+        idObjet++;
     }
 
-    /** Affichage */
+    // fonctions d'affichage
     public void afficheId(){
-        System.out.println("il porte l'ID "+idObjet);
+        System.out.println("L'objet créé porte l'ID "+idObjet);
     }
     
-    public void afficheNbObjet(){
-        System.out.println("Il existe "+nbObjet+ " objets");
+    public void afficheNbObjets(){
+        System.out.println("Il existe "+nbObjets+ " objets");
     }
        
-    /** Getters */
+    // Getters
     public int getId(){return idObjet;}
-    static int getIdMax(){return nbObjet;}
-    
+    static int getNbObjets(){return nbObjets;}
+   
 }
