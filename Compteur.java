@@ -1,8 +1,3 @@
-//plop
-
-
-
-//modif
 /**
  * Write a description of class Compteur here.
  *
@@ -19,7 +14,7 @@ public class Compteur
      * Constructor for objects of class Compteur
      */
     
-    public Compteur(int x, int y)
+    public Compteur(int x)
     {
         // initialise instance variables
         idObjet = nbObjet;

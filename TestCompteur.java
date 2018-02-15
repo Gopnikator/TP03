@@ -10,17 +10,17 @@
 import java.util.Scanner;
 
 
-public class Test
+public class TestCompteur
 {
     private static int i= 1;
-    private static int j= 1;
+    //private static int j= 1;
     private static int k = 2;
     
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         
         /* Voyages enregistrés */
-        Compteur c = new Compteur(i,j); 
+        Compteur c = new Compteur(i); 
         
         
         System.out.println("Il y a ");
