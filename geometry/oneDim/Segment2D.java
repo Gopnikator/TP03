@@ -1,3 +1,5 @@
+package geometry.oneDim;
+import geometry.zeroDim.Point2D;
 
 /**
  * Write a description of class Segment2D here.
@@ -5,6 +7,7 @@
  * @author Alexandre Arnaud - Corentin Besnard
  * @version 15/02/2018
  */
+
 public class Segment2D
 {
     // instance variables - replace the example below with your own
@@ -22,6 +25,7 @@ public class Segment2D
     
     public double longueur(){
         double lg = Math.sqrt(Math.pow((p2.getX()-p1.getX()),2)+Math.pow((p2.getY()-p1.getY()),2));
+        lg = lg*1000;lg=Math.round(lg);lg=lg/1000;
         return lg;
     }
 

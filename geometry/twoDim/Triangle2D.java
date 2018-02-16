@@ -1,3 +1,6 @@
+package geometry.twoDim;
+import geometry.zeroDim.Point2D;
+import geometry.oneDim.Segment2D;
 
 /**
  * Décrivez votre classe Triangle2D ici.

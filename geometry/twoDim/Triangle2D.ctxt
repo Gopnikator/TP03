@@ -2,7 +2,7 @@
 comment0.target=Triangle2D
 comment0.text=\r\n\ D\u00E9crivez\ votre\ classe\ Triangle2D\ ici.\r\n\r\n\ @author\ (votre\ nom)\r\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\r\n
 comment1.params=a\ b\ c
-comment1.target=Triangle2D(Point2D,\ Point2D,\ Point2D)
+comment1.target=Triangle2D(geometry.zeroDim.Point2D,\ geometry.zeroDim.Point2D,\ geometry.zeroDim.Point2D)
 comment1.text=Constructeur\ Triangle2D
 comment2.params=
 comment2.target=double\ perimetre()
