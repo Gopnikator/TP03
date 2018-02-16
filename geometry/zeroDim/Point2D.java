@@ -25,7 +25,7 @@ public class Point2D
     }
     
     public void affiche(){
-        System.out.println("coord = " + x + " " + y);
+        System.out.println("coord = (" + x + ", " + y+")");
     }
     
     public float getX(){

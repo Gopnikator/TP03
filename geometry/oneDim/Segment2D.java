@@ -25,7 +25,7 @@ public class Segment2D
     
     public double longueur(){
         double lg = Math.sqrt(Math.pow((p2.getX()-p1.getX()),2)+Math.pow((p2.getY()-p1.getY()),2));
-        lg = lg*1000;lg=Math.round(lg);lg=lg/1000;
+        //lg = lg*1000;lg=Math.round(lg);lg=lg/1000;
         return lg;
     }
 
@@ -38,11 +38,7 @@ public class Segment2D
     }
     
     public void affiche(){
-        System.out.println("Segment entre ");
-    }
-    
-    public void afficheLg(){
-        System.out.println(longueur());
+        System.out.println("Segment de longueur : "+longueur());
     }
     
     public Point2D getP1(){
