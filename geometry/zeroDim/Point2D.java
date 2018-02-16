@@ -1,3 +1,4 @@
+package geometry.zeroDim;
 
 /**
  * Write a description of class Point2D here.
