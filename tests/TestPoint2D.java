@@ -13,7 +13,7 @@ public class TestPoint2D
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Veuillez saisir les coordonnées du point :");
+        System.out.println("Veuillez saisir les coordonnées du point A :");
         System.out.println("Saisie xA :");
         float x1 = sc.nextInt();
         System.out.println("Saisie yA :");
@@ -21,12 +21,24 @@ public class TestPoint2D
         Point2D a = new Point2D(x1,y1);
         a.affiche();
         
-        System.out.println("Veuillez saisir le vecteur de déplacement du point :");
-        System.out.println("Saisie Vx :");
+        System.out.println("Veuillez saisir les coordonnées du point A :");
+        System.out.println("Saisie xB :");
         float x2 = sc.nextInt();
-        System.out.println("Saisie Vy :");
+        System.out.println("Saisie yB :");
         float y2 = sc.nextInt();
-        a.deplace(x2,y2);
-        a.affiche();
+        Point2D b = new Point2D(x2,y2);
+        b.affiche();
+        
+        System.out.println("Dist entre a et b : "+a.distance(b));
+        
+        System.out.println("Veuillez saisir le vecteur de déplacement du point B :");
+        System.out.println("Saisie Vx :");
+        x2 = sc.nextInt();
+        System.out.println("Saisie Vy :");
+        y2 = sc.nextInt();
+        b.deplace(x2,y2);
+        b.affiche();
+        
+        System.out.println("Dist entre a et b : "+a.distance(b));
     }
 }
